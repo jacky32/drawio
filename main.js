@@ -96,6 +96,12 @@ const calculateRectangle = () => {
         //   console.log("updated");
         updatePos("y");
         updatePos("x", 0);
+        console.log(conditionHeight());
+        if (!conditionHeight()) {
+          alert("Nevejde se");
+          deleteLastRectangle();
+          return;
+        }
         // }
         let rec = new Rectangle(posX, posY, rectangle.width, rectangle.height);
         recArray.push(rec);
