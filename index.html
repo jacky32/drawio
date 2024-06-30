@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <form>
+      <p style="padding-left: 30px">
+        <label>
+          <input id="mainWidth" value="250" min="0" type="number" />
+          <em>plátno délka (cm)</em>
+        </label>
+      </p>
+      <p style="padding-left: 30px">
+        <label>
+          <input id="mainHeight" value="145" min="0" type="number" />
+          <em>plátno výška (cm)</em>
+        </label>
+      </p>
+      <p style="padding-left: 30px">
+        <label>
+          <input id="gap" value="1" min="0" type="number" />
+          <em> mezera mezi díly </em>
+        </label>
+      </p>
+      <p style="padding-left: 30px">
+        <input id="setSize" value="nastavit plátno" type="button" />
+      </p>
+      <p style="padding-left: 30px">
+        <label>
+          <input id="newWidth" value="10" min="0" type="number" />
+          <em> šířka nového </em>
+        </label>
+      </p>
+      <p style="padding-left: 30px">
+        <label>
+          <input id="newHeight" value="10" min="0" type="number" />
+          <em> výška nového </em>
+        </label>
+      </p>
+      <p style="padding-left: 30px">
+        <input id="newRectangle" value="nový díl" type="button" />
+      </p>
+    </form>
+    <div>
+      <canvas id="myCanvas" width="750" height="435">&nbsp;</canvas>
+    </div>
+    <div style="padding-left: 30px">
+      Díly:
+      <div id="rectangles"></div>
+    </div>
+  </body>
+</html>
