@@ -92,11 +92,8 @@ const calculateRectangle = () => {
         }
       } else if (conditionHeight()) {
         row += 1;
-        // if (posY == gap) {
-        //   console.log("updated");
         updatePos("y");
         updatePos("x", 0);
-        console.log(conditionHeight());
         if (!conditionHeight()) {
           alert("Nevejde se");
           deleteLastRectangle();
